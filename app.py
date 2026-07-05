@@ -10,7 +10,7 @@ st.set_page_config(
 
 @st.cache_resource
 def load_artifact():
-    return joblib.load("salary_random_forest_pipeline.joblib")
+    return joblib.load("salary_random_forest.joblib")
 
 artifact = load_artifact()
 pipeline = artifact["pipeline"]
